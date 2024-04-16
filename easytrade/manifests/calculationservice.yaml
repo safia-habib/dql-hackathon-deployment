@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: calculationservice
   namespace: easytrade
+  annotations: 
+    metrics.dynatrace.com/port: '12071'
+    metrics.dynatrace.com/scrape: 'true'
 spec:
   selector:
     matchLabels:

@@ -12,6 +12,9 @@ kind: ConfigMap
 metadata:
   name: aggregatorservice-1
   namespace: easytrade
+  annotations: 
+    metrics.dynatrace.com/port: '12071'
+    metrics.dynatrace.com/scrape: 'true'
 data:
   PLATFORM: "dynatestsieger.at"
   STARTER_PACKAGE_PROBABILITY: '0.6'
